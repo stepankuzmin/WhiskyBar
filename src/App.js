@@ -19,7 +19,7 @@ class App extends PureComponent<Props> {
       longitude: 0.0
     },
     venues: null,
-    venueIndex: null,
+    venueIndex: -1,
     directions: null
   };
 
@@ -29,21 +29,16 @@ class App extends PureComponent<Props> {
   };
 
   showNextBar = async () => {
-    let venues;
-    let venueIndex;
     const { origin } = this.state;
     if (!this.state.venues) {
-      venues = await fetchVenues(origin);
-      venueIndex = 0;
-    } else {
-      venues = this.state.venues;
-      venueIndex =
-        this.state.venueIndex >= venues.length - 1
-          ? 0
-          : this.state.venueIndex + 1;
+      const venues = await fetchVenues(origin);
+      await new Promise(resolve => this.setState({ venues }, resolve));
     }
 
-    const venue = venues[venueIndex];
+    const { venues, venueIndex } = this.state;
+    const nextVenueIndex = venueIndex >= venues.length - 1 ? 0 : venueIndex + 1;
+
+    const venue = venues[nextVenueIndex];
     const destination = {
       latitude: venue.location.lat,
       longitude: venue.location.lng
@@ -53,9 +48,9 @@ class App extends PureComponent<Props> {
 
     this.setState({
       destination,
+      directions,
       venues,
-      venueIndex,
-      directions
+      venueIndex: nextVenueIndex
     });
   };
 
