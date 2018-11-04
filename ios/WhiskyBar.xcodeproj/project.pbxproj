@@ -12,8 +12,7 @@
 		00C302E81ABCBA2D00DB3ED1 /* libRCTImage.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 00C302C01ABCB91800DB3ED1 /* libRCTImage.a */; };
 		00C302E91ABCBA2D00DB3ED1 /* libRCTNetwork.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 00C302DC1ABCB9D200DB3ED1 /* libRCTNetwork.a */; };
 		00C302EA1ABCBA2D00DB3ED1 /* libRCTVibration.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 00C302E41ABCB9EE00DB3ED1 /* libRCTVibration.a */; };
-		00E356F31AD99517003FC87E /* WhiskeyBarTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 00E356F21AD99517003FC87E /* WhiskeyBarTests.m */; };
-		0269D326A25376D7057B715F /* libPods-WhiskeyBarTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 5C79DB2212AE6A091D13128E /* libPods-WhiskeyBarTests.a */; };
+		00E356F31AD99517003FC87E /* WhiskyBarTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 00E356F21AD99517003FC87E /* WhiskyBarTests.m */; };
 		11D1A2F320CAFA9E000508D9 /* libRCTAnimation.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 5E9157331DD0AC6500FF2AA8 /* libRCTAnimation.a */; };
 		133E29F31AD74F7200F7D852 /* libRCTLinking.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 78C398B91ACF4ADC00677621 /* libRCTLinking.a */; };
 		139105C61AF99C1200B5F7CC /* libRCTSettings.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 139105C11AF99BAD00B5F7CC /* libRCTSettings.a */; };
@@ -24,9 +23,10 @@
 		13B07FC11A68108700A75B9A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 13B07FB71A68108700A75B9A /* main.m */; };
 		140ED2AC1D01E1AD002B40FF /* libReact.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 146834041AC3E56700842450 /* libReact.a */; };
 		146834051AC3E58100842450 /* libReact.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 146834041AC3E56700842450 /* libReact.a */; };
+		2DEC58DDE5DE90C5AA26994E /* libPods-WhiskyBarTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 04324E3F8FE5E5762979127E /* libPods-WhiskyBarTests.a */; };
 		832341BD1AAA6AB300B99B32 /* libRCTText.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 832341B51AAA6A8300B99B32 /* libRCTText.a */; };
 		ADBDB9381DFEBF1600ED6528 /* libRCTBlob.a in Frameworks */ = {isa = PBXBuildFile; fileRef = ADBDB9271DFEBF0700ED6528 /* libRCTBlob.a */; };
-		EC755D78054CD9E890418CB0 /* libPods-WhiskeyBar.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 47652466E376F78E19A31E8C /* libPods-WhiskeyBar.a */; };
+		C051992980293EBC8F544A60 /* libPods-WhiskyBar.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 86E0C6D479B6159E43C1AAC6 /* libPods-WhiskyBar.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -70,7 +70,7 @@
 			containerPortal = 83CBB9F71A601CBA00E9B192 /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = 13B07F861A680F5B00A75B9A;
-			remoteInfo = WhiskeyBar;
+			remoteInfo = WhiskyBar;
 		};
 		139105C01AF99BAD00B5F7CC /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
@@ -305,30 +305,30 @@
 		00C302BB1ABCB91800DB3ED1 /* RCTImage.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = RCTImage.xcodeproj; path = "../node_modules/react-native/Libraries/Image/RCTImage.xcodeproj"; sourceTree = "<group>"; };
 		00C302D31ABCB9D200DB3ED1 /* RCTNetwork.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = RCTNetwork.xcodeproj; path = "../node_modules/react-native/Libraries/Network/RCTNetwork.xcodeproj"; sourceTree = "<group>"; };
 		00C302DF1ABCB9EE00DB3ED1 /* RCTVibration.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = RCTVibration.xcodeproj; path = "../node_modules/react-native/Libraries/Vibration/RCTVibration.xcodeproj"; sourceTree = "<group>"; };
-		00E356EE1AD99517003FC87E /* WhiskeyBarTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WhiskeyBarTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		00E356EE1AD99517003FC87E /* WhiskyBarTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WhiskyBarTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		00E356F11AD99517003FC87E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		00E356F21AD99517003FC87E /* WhiskeyBarTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WhiskeyBarTests.m; sourceTree = "<group>"; };
+		00E356F21AD99517003FC87E /* WhiskyBarTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WhiskyBarTests.m; sourceTree = "<group>"; };
+		04324E3F8FE5E5762979127E /* libPods-WhiskyBarTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-WhiskyBarTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		139105B61AF99BAD00B5F7CC /* RCTSettings.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = RCTSettings.xcodeproj; path = "../node_modules/react-native/Libraries/Settings/RCTSettings.xcodeproj"; sourceTree = "<group>"; };
 		139FDEE61B06529A00C62182 /* RCTWebSocket.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = RCTWebSocket.xcodeproj; path = "../node_modules/react-native/Libraries/WebSocket/RCTWebSocket.xcodeproj"; sourceTree = "<group>"; };
-		13B07F961A680F5B00A75B9A /* WhiskeyBar.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WhiskeyBar.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		13B07FAF1A68108700A75B9A /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AppDelegate.h; path = WhiskeyBar/AppDelegate.h; sourceTree = "<group>"; };
-		13B07FB01A68108700A75B9A /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AppDelegate.m; path = WhiskeyBar/AppDelegate.m; sourceTree = "<group>"; };
+		13B07F961A680F5B00A75B9A /* WhiskyBar.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WhiskyBar.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		13B07FAF1A68108700A75B9A /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AppDelegate.h; path = WhiskyBar/AppDelegate.h; sourceTree = "<group>"; };
+		13B07FB01A68108700A75B9A /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AppDelegate.m; path = WhiskyBar/AppDelegate.m; sourceTree = "<group>"; };
 		13B07FB21A68108700A75B9A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
-		13B07FB51A68108700A75B9A /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Images.xcassets; path = WhiskeyBar/Images.xcassets; sourceTree = "<group>"; };
-		13B07FB61A68108700A75B9A /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Info.plist; path = WhiskeyBar/Info.plist; sourceTree = "<group>"; };
-		13B07FB71A68108700A75B9A /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = main.m; path = WhiskeyBar/main.m; sourceTree = "<group>"; };
+		13B07FB51A68108700A75B9A /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Images.xcassets; path = WhiskyBar/Images.xcassets; sourceTree = "<group>"; };
+		13B07FB61A68108700A75B9A /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Info.plist; path = WhiskyBar/Info.plist; sourceTree = "<group>"; };
+		13B07FB71A68108700A75B9A /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = main.m; path = WhiskyBar/main.m; sourceTree = "<group>"; };
 		146833FF1AC3E56700842450 /* React.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = React.xcodeproj; path = "../node_modules/react-native/React/React.xcodeproj"; sourceTree = "<group>"; };
-		1C15CB2C2DF7081F67FB07EC /* Pods-WhiskeyBarTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WhiskeyBarTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-WhiskeyBarTests/Pods-WhiskeyBarTests.debug.xcconfig"; sourceTree = "<group>"; };
+		1768AF740B9514C9380B7957 /* Pods-WhiskyBarTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WhiskyBarTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-WhiskyBarTests/Pods-WhiskyBarTests.release.xcconfig"; sourceTree = "<group>"; };
 		2D16E6891FA4F8E400B85C8A /* libReact.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; path = libReact.a; sourceTree = BUILT_PRODUCTS_DIR; };
-		47652466E376F78E19A31E8C /* libPods-WhiskeyBar.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-WhiskeyBar.a"; sourceTree = BUILT_PRODUCTS_DIR; };
-		4918DFF98E862AE455A306F5 /* Pods-WhiskeyBar.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WhiskeyBar.release.xcconfig"; path = "Pods/Target Support Files/Pods-WhiskeyBar/Pods-WhiskeyBar.release.xcconfig"; sourceTree = "<group>"; };
-		5C79DB2212AE6A091D13128E /* libPods-WhiskeyBarTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-WhiskeyBarTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		3E613974D4623FA9A5597323 /* Pods-WhiskyBar.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WhiskyBar.debug.xcconfig"; path = "Pods/Target Support Files/Pods-WhiskyBar/Pods-WhiskyBar.debug.xcconfig"; sourceTree = "<group>"; };
 		5E91572D1DD0AC6500FF2AA8 /* RCTAnimation.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = RCTAnimation.xcodeproj; path = "../node_modules/react-native/Libraries/NativeAnimation/RCTAnimation.xcodeproj"; sourceTree = "<group>"; };
 		78C398B01ACF4ADC00677621 /* RCTLinking.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = RCTLinking.xcodeproj; path = "../node_modules/react-native/Libraries/LinkingIOS/RCTLinking.xcodeproj"; sourceTree = "<group>"; };
 		832341B01AAA6A8300B99B32 /* RCTText.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = RCTText.xcodeproj; path = "../node_modules/react-native/Libraries/Text/RCTText.xcodeproj"; sourceTree = "<group>"; };
-		9AB724111DA26A223791E1A7 /* Pods-WhiskeyBar.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WhiskeyBar.debug.xcconfig"; path = "Pods/Target Support Files/Pods-WhiskeyBar/Pods-WhiskeyBar.debug.xcconfig"; sourceTree = "<group>"; };
+		86E0C6D479B6159E43C1AAC6 /* libPods-WhiskyBar.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-WhiskyBar.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		87C3AA37BD3C21A1A2B8027D /* Pods-WhiskyBarTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WhiskyBarTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-WhiskyBarTests/Pods-WhiskyBarTests.debug.xcconfig"; sourceTree = "<group>"; };
 		ADBDB91F1DFEBF0600ED6528 /* RCTBlob.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = RCTBlob.xcodeproj; path = "../node_modules/react-native/Libraries/Blob/RCTBlob.xcodeproj"; sourceTree = "<group>"; };
-		E074920A8BF6948B09FA0330 /* Pods-WhiskeyBarTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WhiskeyBarTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-WhiskeyBarTests/Pods-WhiskeyBarTests.release.xcconfig"; sourceTree = "<group>"; };
+		D2104A5280D5EB923D76F27D /* Pods-WhiskyBar.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WhiskyBar.release.xcconfig"; path = "Pods/Target Support Files/Pods-WhiskyBar/Pods-WhiskyBar.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -337,7 +337,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				140ED2AC1D01E1AD002B40FF /* libReact.a in Frameworks */,
-				0269D326A25376D7057B715F /* libPods-WhiskeyBarTests.a in Frameworks */,
+				2DEC58DDE5DE90C5AA26994E /* libPods-WhiskyBarTests.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -357,7 +357,7 @@
 				832341BD1AAA6AB300B99B32 /* libRCTText.a in Frameworks */,
 				00C302EA1ABCBA2D00DB3ED1 /* libRCTVibration.a in Frameworks */,
 				139FDEF61B0652A700C62182 /* libRCTWebSocket.a in Frameworks */,
-				EC755D78054CD9E890418CB0 /* libPods-WhiskeyBar.a in Frameworks */,
+				C051992980293EBC8F544A60 /* libPods-WhiskyBar.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -406,13 +406,13 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
-		00E356EF1AD99517003FC87E /* WhiskeyBarTests */ = {
+		00E356EF1AD99517003FC87E /* WhiskyBarTests */ = {
 			isa = PBXGroup;
 			children = (
-				00E356F21AD99517003FC87E /* WhiskeyBarTests.m */,
+				00E356F21AD99517003FC87E /* WhiskyBarTests.m */,
 				00E356F01AD99517003FC87E /* Supporting Files */,
 			);
-			path = WhiskeyBarTests;
+			path = WhiskyBarTests;
 			sourceTree = "<group>";
 		};
 		00E356F01AD99517003FC87E /* Supporting Files */ = {
@@ -421,6 +421,17 @@
 				00E356F11AD99517003FC87E /* Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		05A2A6988E1F19AAD5C28501 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				3E613974D4623FA9A5597323 /* Pods-WhiskyBar.debug.xcconfig */,
+				D2104A5280D5EB923D76F27D /* Pods-WhiskyBar.release.xcconfig */,
+				87C3AA37BD3C21A1A2B8027D /* Pods-WhiskyBarTests.debug.xcconfig */,
+				1768AF740B9514C9380B7957 /* Pods-WhiskyBarTests.release.xcconfig */,
+			);
+			name = Pods;
 			sourceTree = "<group>";
 		};
 		139105B71AF99BAD00B5F7CC /* Products */ = {
@@ -443,7 +454,7 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
-		13B07FAE1A68108700A75B9A /* WhiskeyBar */ = {
+		13B07FAE1A68108700A75B9A /* WhiskyBar */ = {
 			isa = PBXGroup;
 			children = (
 				008F07F21AC5B25A0029DE68 /* main.jsbundle */,
@@ -454,7 +465,7 @@
 				13B07FB11A68108700A75B9A /* LaunchScreen.xib */,
 				13B07FB71A68108700A75B9A /* main.m */,
 			);
-			name = WhiskeyBar;
+			name = WhiskyBar;
 			sourceTree = "<group>";
 		};
 		146834001AC3E56700842450 /* Products */ = {
@@ -484,8 +495,8 @@
 			isa = PBXGroup;
 			children = (
 				2D16E6891FA4F8E400B85C8A /* libReact.a */,
-				47652466E376F78E19A31E8C /* libPods-WhiskeyBar.a */,
-				5C79DB2212AE6A091D13128E /* libPods-WhiskeyBarTests.a */,
+				86E0C6D479B6159E43C1AAC6 /* libPods-WhiskyBar.a */,
+				04324E3F8FE5E5762979127E /* libPods-WhiskyBarTests.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -539,12 +550,12 @@
 		83CBB9F61A601CBA00E9B192 = {
 			isa = PBXGroup;
 			children = (
-				13B07FAE1A68108700A75B9A /* WhiskeyBar */,
+				13B07FAE1A68108700A75B9A /* WhiskyBar */,
 				832341AE1AAA6A7D00B99B32 /* Libraries */,
-				00E356EF1AD99517003FC87E /* WhiskeyBarTests */,
+				00E356EF1AD99517003FC87E /* WhiskyBarTests */,
 				83CBBA001A601CBA00E9B192 /* Products */,
 				2D16E6871FA4F8E400B85C8A /* Frameworks */,
-				9A854CDFE45CAAF3B57577A4 /* Pods */,
+				05A2A6988E1F19AAD5C28501 /* Pods */,
 			);
 			indentWidth = 2;
 			sourceTree = "<group>";
@@ -554,21 +565,10 @@
 		83CBBA001A601CBA00E9B192 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				13B07F961A680F5B00A75B9A /* WhiskeyBar.app */,
-				00E356EE1AD99517003FC87E /* WhiskeyBarTests.xctest */,
+				13B07F961A680F5B00A75B9A /* WhiskyBar.app */,
+				00E356EE1AD99517003FC87E /* WhiskyBarTests.xctest */,
 			);
 			name = Products;
-			sourceTree = "<group>";
-		};
-		9A854CDFE45CAAF3B57577A4 /* Pods */ = {
-			isa = PBXGroup;
-			children = (
-				9AB724111DA26A223791E1A7 /* Pods-WhiskeyBar.debug.xcconfig */,
-				4918DFF98E862AE455A306F5 /* Pods-WhiskeyBar.release.xcconfig */,
-				1C15CB2C2DF7081F67FB07EC /* Pods-WhiskeyBarTests.debug.xcconfig */,
-				E074920A8BF6948B09FA0330 /* Pods-WhiskeyBarTests.release.xcconfig */,
-			);
-			name = Pods;
 			sourceTree = "<group>";
 		};
 		ADBDB9201DFEBF0600ED6528 /* Products */ = {
@@ -583,11 +583,11 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		00E356ED1AD99517003FC87E /* WhiskeyBarTests */ = {
+		00E356ED1AD99517003FC87E /* WhiskyBarTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 00E357021AD99517003FC87E /* Build configuration list for PBXNativeTarget "WhiskeyBarTests" */;
+			buildConfigurationList = 00E357021AD99517003FC87E /* Build configuration list for PBXNativeTarget "WhiskyBarTests" */;
 			buildPhases = (
-				DA9A6A75440DE5F1244A6AF1 /* [CP] Check Pods Manifest.lock */,
+				9DF22A12D76137842E47DDD6 /* [CP] Check Pods Manifest.lock */,
 				00E356EA1AD99517003FC87E /* Sources */,
 				00E356EB1AD99517003FC87E /* Frameworks */,
 				00E356EC1AD99517003FC87E /* Resources */,
@@ -597,29 +597,29 @@
 			dependencies = (
 				00E356F51AD99517003FC87E /* PBXTargetDependency */,
 			);
-			name = WhiskeyBarTests;
-			productName = WhiskeyBarTests;
-			productReference = 00E356EE1AD99517003FC87E /* WhiskeyBarTests.xctest */;
+			name = WhiskyBarTests;
+			productName = WhiskyBarTests;
+			productReference = 00E356EE1AD99517003FC87E /* WhiskyBarTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
-		13B07F861A680F5B00A75B9A /* WhiskeyBar */ = {
+		13B07F861A680F5B00A75B9A /* WhiskyBar */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 13B07F931A680F5B00A75B9A /* Build configuration list for PBXNativeTarget "WhiskeyBar" */;
+			buildConfigurationList = 13B07F931A680F5B00A75B9A /* Build configuration list for PBXNativeTarget "WhiskyBar" */;
 			buildPhases = (
-				211816677020FC48361738E4 /* [CP] Check Pods Manifest.lock */,
+				19E8ED37B6FC90A616F69978 /* [CP] Check Pods Manifest.lock */,
 				13B07F871A680F5B00A75B9A /* Sources */,
 				13B07F8C1A680F5B00A75B9A /* Frameworks */,
 				13B07F8E1A680F5B00A75B9A /* Resources */,
 				00DD1BFF1BD5951E006B06BC /* Bundle React Native code and images */,
-				C4C2962115C6549B36551880 /* [CP] Embed Pods Frameworks */,
+				76D9E0F0D047AC28B84B211A /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
-			name = WhiskeyBar;
+			name = WhiskyBar;
 			productName = "Hello World";
-			productReference = 13B07F961A680F5B00A75B9A /* WhiskeyBar.app */;
+			productReference = 13B07F961A680F5B00A75B9A /* WhiskyBar.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -641,7 +641,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 83CBB9FA1A601CBA00E9B192 /* Build configuration list for PBXProject "WhiskeyBar" */;
+			buildConfigurationList = 83CBB9FA1A601CBA00E9B192 /* Build configuration list for PBXProject "WhiskyBar" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
@@ -704,8 +704,8 @@
 			);
 			projectRoot = "";
 			targets = (
-				13B07F861A680F5B00A75B9A /* WhiskeyBar */,
-				00E356ED1AD99517003FC87E /* WhiskeyBarTests */,
+				13B07F861A680F5B00A75B9A /* WhiskyBar */,
+				00E356ED1AD99517003FC87E /* WhiskyBarTests */,
 			);
 		};
 /* End PBXProject section */
@@ -1006,7 +1006,7 @@
 			shellPath = /bin/sh;
 			shellScript = "export NODE_BINARY=node\n../node_modules/react-native/scripts/react-native-xcode.sh";
 		};
-		211816677020FC48361738E4 /* [CP] Check Pods Manifest.lock */ = {
+		19E8ED37B6FC90A616F69978 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -1017,20 +1017,20 @@
 			);
 			name = "[CP] Check Pods Manifest.lock";
 			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-WhiskeyBar-checkManifestLockResult.txt",
+				"$(DERIVED_FILE_DIR)/Pods-WhiskyBar-checkManifestLockResult.txt",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
-		C4C2962115C6549B36551880 /* [CP] Embed Pods Frameworks */ = {
+		76D9E0F0D047AC28B84B211A /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
-				"${SRCROOT}/Pods/Target Support Files/Pods-WhiskeyBar/Pods-WhiskeyBar-frameworks.sh",
+				"${SRCROOT}/Pods/Target Support Files/Pods-WhiskyBar/Pods-WhiskyBar-frameworks.sh",
 				"${PODS_ROOT}/../../node_modules/@mapbox/react-native-mapbox-gl/ios/Mapbox.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
@@ -1039,10 +1039,10 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-WhiskeyBar/Pods-WhiskeyBar-frameworks.sh\"\n";
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-WhiskyBar/Pods-WhiskyBar-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
-		DA9A6A75440DE5F1244A6AF1 /* [CP] Check Pods Manifest.lock */ = {
+		9DF22A12D76137842E47DDD6 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -1053,7 +1053,7 @@
 			);
 			name = "[CP] Check Pods Manifest.lock";
 			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-WhiskeyBarTests-checkManifestLockResult.txt",
+				"$(DERIVED_FILE_DIR)/Pods-WhiskyBarTests-checkManifestLockResult.txt",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -1067,7 +1067,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				00E356F31AD99517003FC87E /* WhiskeyBarTests.m in Sources */,
+				00E356F31AD99517003FC87E /* WhiskyBarTests.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1085,7 +1085,7 @@
 /* Begin PBXTargetDependency section */
 		00E356F51AD99517003FC87E /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 13B07F861A680F5B00A75B9A /* WhiskeyBar */;
+			target = 13B07F861A680F5B00A75B9A /* WhiskyBar */;
 			targetProxy = 00E356F41AD99517003FC87E /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
@@ -1097,7 +1097,7 @@
 				13B07FB21A68108700A75B9A /* Base */,
 			);
 			name = LaunchScreen.xib;
-			path = WhiskeyBar;
+			path = WhiskyBar;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -1105,16 +1105,15 @@
 /* Begin XCBuildConfiguration section */
 		00E356F61AD99517003FC87E /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 1C15CB2C2DF7081F67FB07EC /* Pods-WhiskeyBarTests.debug.xcconfig */;
+			baseConfigurationReference = 87C3AA37BD3C21A1A2B8027D /* Pods-WhiskyBarTests.debug.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				DEVELOPMENT_TEAM = QBN2T4SX2Y;
-				ENABLE_BITCODE = NO;
 				GCC_PREPROCESSOR_DEFINITIONS = (
 					"DEBUG=1",
 					"$(inherited)",
 				);
-				INFOPLIST_FILE = WhiskeyBarTests/Info.plist;
+				INFOPLIST_FILE = WhiskyBarTests/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				OTHER_LDFLAGS = (
@@ -1123,19 +1122,18 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "org.reactjs.native.example.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/WhiskeyBar.app/WhiskeyBar";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/WhiskyBar.app/WhiskyBar";
 			};
 			name = Debug;
 		};
 		00E356F71AD99517003FC87E /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = E074920A8BF6948B09FA0330 /* Pods-WhiskeyBarTests.release.xcconfig */;
+			baseConfigurationReference = 1768AF740B9514C9380B7957 /* Pods-WhiskyBarTests.release.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				COPY_PHASE_STRIP = NO;
 				DEVELOPMENT_TEAM = QBN2T4SX2Y;
-				ENABLE_BITCODE = NO;
-				INFOPLIST_FILE = WhiskeyBarTests/Info.plist;
+				INFOPLIST_FILE = WhiskyBarTests/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				OTHER_LDFLAGS = (
@@ -1144,19 +1142,19 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "org.reactjs.native.example.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/WhiskeyBar.app/WhiskeyBar";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/WhiskyBar.app/WhiskyBar";
 			};
 			name = Release;
 		};
 		13B07F941A680F5B00A75B9A /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 9AB724111DA26A223791E1A7 /* Pods-WhiskeyBar.debug.xcconfig */;
+			baseConfigurationReference = 3E613974D4623FA9A5597323 /* Pods-WhiskyBar.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CURRENT_PROJECT_VERSION = 1;
 				DEAD_CODE_STRIPPING = NO;
 				DEVELOPMENT_TEAM = QBN2T4SX2Y;
-				INFOPLIST_FILE = WhiskeyBar/Info.plist;
+				INFOPLIST_FILE = WhiskyBar/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				OTHER_LDFLAGS = (
 					"$(inherited)",
@@ -1164,19 +1162,19 @@
 					"-lc++",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "org.reactjs.native.example.$(PRODUCT_NAME:rfc1034identifier)";
-				PRODUCT_NAME = WhiskeyBar;
+				PRODUCT_NAME = WhiskyBar;
 				VERSIONING_SYSTEM = "apple-generic";
 			};
 			name = Debug;
 		};
 		13B07F951A680F5B00A75B9A /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 4918DFF98E862AE455A306F5 /* Pods-WhiskeyBar.release.xcconfig */;
+			baseConfigurationReference = D2104A5280D5EB923D76F27D /* Pods-WhiskyBar.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = QBN2T4SX2Y;
-				INFOPLIST_FILE = WhiskeyBar/Info.plist;
+				INFOPLIST_FILE = WhiskyBar/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				OTHER_LDFLAGS = (
 					"$(inherited)",
@@ -1184,7 +1182,7 @@
 					"-lc++",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "org.reactjs.native.example.$(PRODUCT_NAME:rfc1034identifier)";
-				PRODUCT_NAME = WhiskeyBar;
+				PRODUCT_NAME = WhiskyBar;
 				VERSIONING_SYSTEM = "apple-generic";
 			};
 			name = Release;
@@ -1293,7 +1291,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		00E357021AD99517003FC87E /* Build configuration list for PBXNativeTarget "WhiskeyBarTests" */ = {
+		00E357021AD99517003FC87E /* Build configuration list for PBXNativeTarget "WhiskyBarTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				00E356F61AD99517003FC87E /* Debug */,
@@ -1302,7 +1300,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		13B07F931A680F5B00A75B9A /* Build configuration list for PBXNativeTarget "WhiskeyBar" */ = {
+		13B07F931A680F5B00A75B9A /* Build configuration list for PBXNativeTarget "WhiskyBar" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				13B07F941A680F5B00A75B9A /* Debug */,
@@ -1311,7 +1309,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		83CBB9FA1A601CBA00E9B192 /* Build configuration list for PBXProject "WhiskeyBar" */ = {
+		83CBB9FA1A601CBA00E9B192 /* Build configuration list for PBXProject "WhiskyBar" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				83CBBA201A601CBA00E9B192 /* Debug */,

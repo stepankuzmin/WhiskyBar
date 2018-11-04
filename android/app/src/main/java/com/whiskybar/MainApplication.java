@@ -1,4 +1,4 @@
-package com.whiskeybar;
+package com.whiskybar;
 
 import android.app.Application;
 

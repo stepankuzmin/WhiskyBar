@@ -1,6 +1,6 @@
-# WhiskeyBar
+# WhiskyBar
 
-![Screenshot](https://raw.githubusercontent.com/stepankuzmin/WhiskeyBar/master/screenshot.png)
+![Screenshot](https://raw.githubusercontent.com/stepankuzmin/WhiskyBar/master/screenshot.png)
 
 > Well, show me the way
 > To the next whisky bar
@@ -12,8 +12,8 @@ You have to install [Xcode](https://developer.apple.com/xcode/).
 Clone source code
 
 ```sh
-git clone https://github.com/stepankuzmin/WhiskeyBar.git
-cd WhiskeyBar
+git clone https://github.com/stepankuzmin/WhiskyBar.git
+cd WhiskyBar
 yarn
 ```
 

@@ -1,11 +1,11 @@
 # Uncomment the next line to define a global platform for your project
 # platform :ios, '9.0'
 
-target 'WhiskeyBar' do
+target 'WhiskyBar' do
   # Uncomment the next line if you're using Swift or would like to use dynamic frameworks
   # use_frameworks!
 
-  # Pods for WhiskeyBar
+  # Pods for WhiskyBar
   # Flexbox Layout Manager Used By React Native
   pod 'yoga', :path => '../node_modules/react-native/ReactCommon/yoga/Yoga.podspec'
 
@@ -32,7 +32,7 @@ target 'WhiskeyBar' do
 
   pod 'react-native-mapbox-gl', :path => '../node_modules/@mapbox/react-native-mapbox-gl'
 
-  target 'WhiskeyBarTests' do
+  target 'WhiskyBarTests' do
     inherit! :search_paths
     # Pods for testing
   end
