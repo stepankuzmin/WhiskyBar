@@ -1,9 +1,10 @@
+<img align="right" src="https://raw.githubusercontent.com/stepankuzmin/WhiskyBar/master/screenshot.png">
+
 # WhiskyBar
 
-![Screenshot](https://raw.githubusercontent.com/stepankuzmin/WhiskyBar/master/screenshot.png)
+React Native App that shows you the way to the next whisky bar.
 
-> Well, show me the way
-> To the next whisky bar
+> Well, show me the way to the next whisky bar
 
 ## Building from source
 
