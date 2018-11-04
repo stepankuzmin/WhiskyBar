@@ -648,7 +648,7 @@
     is-plain-obj "^1.1.0"
     xtend "^4.0.1"
 
-"@mapbox/mapbox-sdk@^0.4.1":
+"@mapbox/mapbox-sdk@0.4.1":
   version "0.4.1"
   resolved "https://registry.yarnpkg.com/@mapbox/mapbox-sdk/-/mapbox-sdk-0.4.1.tgz#3428ae6b01b9af7ae0a6ffe6fdfe0468e8c6f232"
   integrity sha512-EWe6HjV0MP0PzHHs4nN3txx+RqYm3YZh/tYWzz9FA1k1ryA2p/rCHg8CTrDCBVSczaU8xI/2qQ7lHAAWf2dR/g==
@@ -1448,7 +1448,7 @@ babel-plugin-transform-flow-strip-types@^6.8.0:
     babel-plugin-syntax-flow "^6.18.0"
     babel-runtime "^6.22.0"
 
-babel-plugin-transform-inline-environment-variables@^0.4.3:
+babel-plugin-transform-inline-environment-variables@0.4.3:
   version "0.4.3"
   resolved "https://registry.yarnpkg.com/babel-plugin-transform-inline-environment-variables/-/babel-plugin-transform-inline-environment-variables-0.4.3.tgz#a3b09883353be8b5e2336e3ff1ef8a5d93f9c489"
   integrity sha1-o7CYgzU76LXiM24/8e+KXZP5xIk=
@@ -2569,7 +2569,7 @@ eslint-config-airbnb@17.1.0:
     object.assign "^4.1.0"
     object.entries "^1.0.4"
 
-eslint-config-prettier@^3.1.0:
+eslint-config-prettier@3.1.0:
   version "3.1.0"
   resolved "https://registry.yarnpkg.com/eslint-config-prettier/-/eslint-config-prettier-3.1.0.tgz#2c26d2cdcfa3a05f0642cd7e6e4ef3316cdabfa2"
   integrity sha512-QYGfmzuc4q4J6XIhlp8vRKdI/fI0tQfQPy1dME3UOLprE+v4ssH/3W9LM2Q7h5qBcy5m0ehCrBDU2YF8q6OY8w==
@@ -6237,7 +6237,7 @@ preserve@^0.2.0:
   resolved "https://registry.yarnpkg.com/preserve/-/preserve-0.2.0.tgz#815ed1f6ebc65926f865b310c0713bcb3315ce4b"
   integrity sha1-gV7R9uvGWSb4ZbMQwHE7yzMVzks=
 
-prettier-eslint-cli@^4.7.1:
+prettier-eslint-cli@4.7.1:
   version "4.7.1"
   resolved "https://registry.yarnpkg.com/prettier-eslint-cli/-/prettier-eslint-cli-4.7.1.tgz#3d103c494baa4e80b99ad53e2b9db7620101859f"
   integrity sha512-hQbsGaEVz97oBBcKdsJ46khv0kOGkMyWrXzcFOXW6X8UuetZ/j0yDJkNJgUTVc6PVFbbzBXk+qgd5vos9qzXPQ==
@@ -6261,7 +6261,7 @@ prettier-eslint-cli@^4.7.1:
     rxjs "^5.3.0"
     yargs "10.0.3"
 
-prettier-eslint@^8.5.0, prettier-eslint@^8.8.2:
+prettier-eslint@8.8.2, prettier-eslint@^8.5.0:
   version "8.8.2"
   resolved "https://registry.yarnpkg.com/prettier-eslint/-/prettier-eslint-8.8.2.tgz#fcb29a48ab4524e234680797fe70e9d136ccaf0b"
   integrity sha512-2UzApPuxi2yRoyMlXMazgR6UcH9DKJhNgCviIwY3ixZ9THWSSrUww5vkiZ3C48WvpFl1M1y/oU63deSy1puWEA==
@@ -6280,7 +6280,7 @@ prettier-eslint@^8.5.0, prettier-eslint@^8.8.2:
     typescript-eslint-parser "^16.0.0"
     vue-eslint-parser "^2.0.2"
 
-prettier@^1.14.3, prettier@^1.7.0:
+prettier@1.14.3, prettier@^1.7.0:
   version "1.14.3"
   resolved "https://registry.yarnpkg.com/prettier/-/prettier-1.14.3.tgz#90238dd4c0684b7edce5f83b0fb7328e48bd0895"
   integrity sha512-qZDVnCrnpsRJJq5nSsiHCE3BYMED2OtsI+cmzIzF1QIfqm5ALf8tEJcO27zV1gKNKRPdhjO0dNWnrzssDQ1tFg==
