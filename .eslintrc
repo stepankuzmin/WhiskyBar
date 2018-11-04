@@ -15,6 +15,7 @@
   "rules": {
     "jsx-quotes": ["error", "prefer-single"],
     "quotes": ["error", "single"],
+    "react/destructuring-assignment": [0, "always"],
     "react/jsx-filename-extension": [
       1,
       {

@@ -20,6 +20,7 @@ const Map = (props: Props) => {
       localizeLabels
       showUserLocation
       logoEnabled={false}
+      attributionEnabled={false}
       onUserLocationUpdate={onUserLocationUpdate}
       userTrackingMode={MapboxGL.UserTrackingModes.Follow}
       style={sheet.container}

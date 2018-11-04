@@ -25,7 +25,9 @@ class App extends PureComponent<Props> {
       latitude: 0.0,
       longitude: 0.0
     },
-    directions: null
+    venues: null,
+    directions: null,
+    venueIndex: null
   };
 
   onUserLocationUpdate = location => {
@@ -34,28 +36,42 @@ class App extends PureComponent<Props> {
   };
 
   showNextBar = async () => {
-    const {
-      origin: { latitude, longitude }
-    } = this.state;
+    let venues;
+    let venueIndex;
+    if (!this.state.venues) {
+      venues = await this.fetchVenues();
+      venueIndex = 0;
+    } else {
+      venues = this.state.venues;
+      venueIndex =
+        this.state.venueIndex >= venues.length - 1
+          ? 0
+          : this.state.venueIndex + 1;
+    }
 
-    const venues = await this.fetchVenues(latitude, longitude);
+    const venue = venues[venueIndex];
 
-    const { lat, lng } = venues[0].location;
-    const from = [longitude, latitude];
+    const { lat, lng } = venue.location;
     const to = [lng, lat];
 
-    const directions = await this.fetchDirections(from, to);
+    const directions = await this.fetchDirections(to);
 
     this.setState({
       destination: {
         latitude: lat,
         longitude: lng
       },
+      venues,
+      venueIndex,
       directions
     });
   };
 
-  fetchVenues = (latitude, longitude) => {
+  fetchVenues = () => {
+    const {
+      origin: { latitude, longitude }
+    } = this.state;
+
     const apiUrl = `${FOURSQUARE_API_URL}&ll=${latitude},${longitude}`;
 
     return fetch(apiUrl)
@@ -63,7 +79,13 @@ class App extends PureComponent<Props> {
       .then(({ response }) => response.venues);
   };
 
-  fetchDirections = (from, to) => {
+  fetchDirections = to => {
+    const {
+      origin: { latitude, longitude }
+    } = this.state;
+
+    const from = [longitude, latitude];
+
     return directionsClient
       .getDirections({
         profile: 'walking',
