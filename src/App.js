@@ -2,15 +2,10 @@
 
 import React, { PureComponent } from 'react';
 import { StyleSheet, View } from 'react-native';
-import MapboxGL from '@mapbox/react-native-mapbox-gl';
-import mapboxDirections from '@mapbox/mapbox-sdk/services/directions';
 
 import Map from './Map';
 import Button from './RouteButton';
-import { MAPBOX_ACCESS_TOKEN, FOURSQUARE_API_URL } from './config';
-
-MapboxGL.setAccessToken(MAPBOX_ACCESS_TOKEN);
-const directionsClient = mapboxDirections({ accessToken: MAPBOX_ACCESS_TOKEN });
+import { fetchVenues, fetchDirections } from './utils';
 
 type Props = {};
 class App extends PureComponent<Props> {
@@ -24,8 +19,8 @@ class App extends PureComponent<Props> {
       longitude: 0.0
     },
     venues: null,
-    directions: null,
-    venueIndex: null
+    venueIndex: null,
+    directions: null
   };
 
   onUserLocationUpdate = location => {
@@ -36,8 +31,9 @@ class App extends PureComponent<Props> {
   showNextBar = async () => {
     let venues;
     let venueIndex;
+    const { origin } = this.state;
     if (!this.state.venues) {
-      venues = await this.fetchVenues();
+      venues = await fetchVenues(origin);
       venueIndex = 0;
     } else {
       venues = this.state.venues;
@@ -48,50 +44,19 @@ class App extends PureComponent<Props> {
     }
 
     const venue = venues[venueIndex];
+    const destination = {
+      latitude: venue.location.lat,
+      longitude: venue.location.lng
+    };
 
-    const { lat, lng } = venue.location;
-    const to = [lng, lat];
-
-    const directions = await this.fetchDirections(to);
+    const directions = await fetchDirections(origin, destination);
 
     this.setState({
-      destination: {
-        latitude: lat,
-        longitude: lng
-      },
+      destination,
       venues,
       venueIndex,
       directions
     });
-  };
-
-  fetchVenues = () => {
-    const {
-      origin: { latitude, longitude }
-    } = this.state;
-
-    const apiUrl = `${FOURSQUARE_API_URL}&ll=${latitude},${longitude}`;
-
-    return fetch(apiUrl)
-      .then(response => response.json())
-      .then(({ response }) => response.venues);
-  };
-
-  fetchDirections = to => {
-    const {
-      origin: { latitude, longitude }
-    } = this.state;
-
-    const from = [longitude, latitude];
-
-    return directionsClient
-      .getDirections({
-        profile: 'walking',
-        geometries: 'geojson',
-        waypoints: [{ coordinates: from }, { coordinates: to }]
-      })
-      .send()
-      .then(response => response.body);
   };
 
   render() {
@@ -103,7 +68,6 @@ class App extends PureComponent<Props> {
         <Map
           route={route}
           destination={destination}
-          accessToken={MAPBOX_ACCESS_TOKEN}
           onUserLocationUpdate={this.onUserLocationUpdate}
         />
         <Button onPress={this.showNextBar} />

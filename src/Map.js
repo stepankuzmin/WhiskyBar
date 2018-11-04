@@ -7,6 +7,9 @@ import bbox from '@turf/bbox';
 
 import Route from './Route';
 import Destination from './Destination';
+import { MAPBOX_ACCESS_TOKEN } from './config';
+
+MapboxGL.setAccessToken(MAPBOX_ACCESS_TOKEN);
 
 type Props = {
   route: Object,
