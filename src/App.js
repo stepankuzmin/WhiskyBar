@@ -6,8 +6,6 @@ import MapboxGL from '@mapbox/react-native-mapbox-gl';
 import mapboxDirections from '@mapbox/mapbox-sdk/services/directions';
 
 import Map from './Map';
-import Route from './Route';
-import Destination from './Destination';
 import Button from './RouteButton';
 import { MAPBOX_ACCESS_TOKEN, FOURSQUARE_API_URL } from './config';
 
@@ -103,12 +101,11 @@ class App extends PureComponent<Props> {
     return (
       <View style={styles.container}>
         <Map
+          route={route}
+          destination={destination}
           accessToken={MAPBOX_ACCESS_TOKEN}
           onUserLocationUpdate={this.onUserLocationUpdate}
-        >
-          <Destination {...destination} />
-          <Route {...route} />
-        </Map>
+        />
         <Button onPress={this.showNextBar} />
       </View>
     );
