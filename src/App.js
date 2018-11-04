@@ -20,7 +20,7 @@ class App extends PureComponent<Props> {
     },
     venues: null,
     venueIndex: -1,
-    directions: null
+    route: null
   };
 
   onUserLocationUpdate = location => {
@@ -45,18 +45,22 @@ class App extends PureComponent<Props> {
     };
 
     const directions = await fetchDirections(origin, destination);
+    const route = directions.routes[0];
+
+    const coordinates = route.geometry.coordinates;
+    coordinates.unshift([origin.longitude, origin.latitude]);
+    coordinates.push([destination.longitude, destination.latitude]);
 
     this.setState({
       destination,
-      directions,
+      route,
       venues,
       venueIndex: nextVenueIndex
     });
   };
 
   render() {
-    const { directions, destination } = this.state;
-    const route = directions && directions.routes[0];
+    const { route, destination } = this.state;
 
     return (
       <View style={styles.container}>
