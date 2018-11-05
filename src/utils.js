@@ -11,13 +11,14 @@ import {
 const directionsClient = mapboxDirections({ accessToken: MAPBOX_ACCESS_TOKEN });
 
 // https://developer.foursquare.com/docs/api/venues/search
+// https://developer.foursquare.com/docs/resources/categories
 export const fetchVenues = ({ latitude, longitude }) => {
   const params = {
     client_id: FOURSQUARE_CLIENT_ID,
     client_secret: FOURSQUARE_CLIENT_SECRET,
     intent: 'browse',
     limit: 10,
-    query: 'bar',
+    categoryId: '4bf58dd8d48988d122941735',
     radius: 1000,
     v: '20180323',
     ll: `${latitude},${longitude}`
