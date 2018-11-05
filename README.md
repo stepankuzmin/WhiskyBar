@@ -2,9 +2,7 @@
 
 # WhiskyBar
 
-React Native App that shows you the way to the next whisky bar.
-
-> Well, show me the way to the next whisky bar
+React Native App that shows you the way to the next whisky bar. Build with [Mapbox Maps SDK for React Native](https://github.com/mapbox/react-native-mapbox-gl).
 
 ## Building from source
 
@@ -26,11 +24,7 @@ pod install
 cd ..
 ```
 
-Create `.env` file with your Mapbox [access token](https://www.mapbox.com/account/access-tokens/)
-
-```sh
-echo "MAPBOX_ACCESS_TOKEN=<YOUR TOKEN HERE>" > .env
-```
+You have to populate your environment with `MAPBOX_ACCESS_TOKEN`, `FOURSQUARE_CLIENT_ID` and `FOURSQUARE_CLIENT_SECRET` variables.
 
 Run app in iOS simulator
 

@@ -12,6 +12,9 @@ const directionsClient = mapboxDirections({ accessToken: MAPBOX_ACCESS_TOKEN });
 
 // https://developer.foursquare.com/docs/api/venues/search
 // https://developer.foursquare.com/docs/resources/categories
+// Foursquare category ids:
+// Bar: 4bf58dd8d48988d116941735
+// Whisky bar: 4bf58dd8d48988d122941735
 export const fetchVenues = ({ latitude, longitude }) => {
   const params = {
     client_id: FOURSQUARE_CLIENT_ID,
