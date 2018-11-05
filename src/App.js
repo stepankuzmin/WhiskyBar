@@ -5,12 +5,13 @@ import { StyleSheet, View } from 'react-native';
 
 import Map from './Map';
 import Card from './Card';
-import StartButton from './StartButton';
+import WhiskyButton from './WhiskyButton';
 import { fetchVenues, fetchDirections } from './utils';
 
 type Props = {};
 class App extends PureComponent<Props> {
   state = {
+    mapFinishedLoading: false,
     origin: {
       latitude: 0.0,
       longitude: 0.0
@@ -24,6 +25,10 @@ class App extends PureComponent<Props> {
     route: null
   };
 
+  onDidFinishLoadingMap = () => {
+    this.setState({ mapFinishedLoading: true });
+  };
+
   onUserLocationUpdate = location => {
     const { coords } = location;
     this.setState({ origin: { ...coords } });
@@ -32,6 +37,7 @@ class App extends PureComponent<Props> {
   showNextBar = async () => {
     const { origin } = this.state;
     if (!this.state.venues) {
+      // TODO: handle if there is no venues
       const venues = await fetchVenues(origin);
       await new Promise(resolve => this.setState({ venues }, resolve));
     }
@@ -61,7 +67,14 @@ class App extends PureComponent<Props> {
   };
 
   render() {
-    const { venues, venueIndex, route, destination } = this.state;
+    const {
+      mapFinishedLoading,
+      venues,
+      venueIndex,
+      route,
+      destination
+    } = this.state;
+
     const venue = venues && venues[venueIndex];
 
     return (
@@ -70,9 +83,10 @@ class App extends PureComponent<Props> {
           route={route}
           destination={destination}
           onUserLocationUpdate={this.onUserLocationUpdate}
+          onDidFinishLoadingMap={this.onDidFinishLoadingMap}
         />
-        <Card venue={venue} route={route} onPress={this.showNextBar} />
-        {!venue && <StartButton onPress={this.showNextBar} />}
+        {venue && <Card venue={venue} route={route} />}
+        {mapFinishedLoading && <WhiskyButton onPress={this.showNextBar} />}
       </View>
     );
   }

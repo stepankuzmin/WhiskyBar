@@ -23,12 +23,17 @@ class Map extends PureComponent<Props> {
       const bb = bbox(this.props.route.geometry);
       const ne = [bb[2], bb[1]];
       const sw = [bb[0], bb[3]];
-      this._map.fitBounds(ne, sw, 80, 500);
+      this._map.fitBounds(ne, sw, 40, 500);
     }
   }
 
   render() {
-    const { route, destination, onUserLocationUpdate } = this.props;
+    const {
+      route,
+      destination,
+      onUserLocationUpdate,
+      onDidFinishLoadingMap
+    } = this.props;
 
     return (
       <MapboxGL.MapView
@@ -42,10 +47,11 @@ class Map extends PureComponent<Props> {
         attributionEnabled={false}
         onUserLocationUpdate={onUserLocationUpdate}
         userTrackingMode={MapboxGL.UserTrackingModes.Follow}
+        onDidFinishLoadingMap={onDidFinishLoadingMap}
         style={sheet.container}
       >
-        <Destination {...destination} />
         <Route {...route} />
+        <Destination {...destination} />
       </MapboxGL.MapView>
     );
   }

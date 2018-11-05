@@ -30,7 +30,7 @@ const Destination = (props: Props) => {
 const styles = MapboxGL.StyleSheet.create({
   destination: {
     circleRadius: 10,
-    circleColor: 'white'
+    circleColor: '#F7F3EE'
   }
 });
 

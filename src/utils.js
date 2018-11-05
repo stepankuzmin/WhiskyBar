@@ -21,7 +21,7 @@ export const fetchVenues = ({ latitude, longitude }) => {
     client_secret: FOURSQUARE_CLIENT_SECRET,
     intent: 'browse',
     limit: 10,
-    categoryId: '4bf58dd8d48988d122941735',
+    categoryId: '4bf58dd8d48988d116941735',
     radius: 1000,
     v: '20180323',
     ll: `${latitude},${longitude}`

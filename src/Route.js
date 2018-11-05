@@ -16,16 +16,20 @@ const Route = (props: Props) => {
 
   return (
     <MapboxGL.ShapeSource id='routeSource' shape={geometry}>
-      <MapboxGL.LineLayer id='routeFill' style={styles.route} />
+      <MapboxGL.LineLayer
+        id='routeFill'
+        style={styles.route}
+        belowLayerID='waterway-label'
+      />
     </MapboxGL.ShapeSource>
   );
 };
 
 const styles = MapboxGL.StyleSheet.create({
   route: {
-    lineColor: 'white',
+    lineColor: '#F7F3EE',
     lineWidth: 3,
-    lineOpacity: 0.84
+    lineOpacity: 0.8
   }
 });
 
