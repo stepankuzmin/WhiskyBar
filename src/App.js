@@ -4,7 +4,7 @@ import React, { PureComponent } from 'react';
 import { StyleSheet, View } from 'react-native';
 
 import Map from './Map';
-import Button from './RouteButton';
+import Card from './Card';
 import { fetchVenues, fetchDirections } from './utils';
 
 type Props = {};
@@ -60,7 +60,8 @@ class App extends PureComponent<Props> {
   };
 
   render() {
-    const { route, destination } = this.state;
+    const { venues, venueIndex, route, destination } = this.state;
+    const venue = venues && venues[venueIndex];
 
     return (
       <View style={styles.container}>
@@ -69,7 +70,7 @@ class App extends PureComponent<Props> {
           destination={destination}
           onUserLocationUpdate={this.onUserLocationUpdate}
         />
-        <Button onPress={this.showNextBar} />
+        <Card {...venue} onPress={this.showNextBar} />
       </View>
     );
   }
