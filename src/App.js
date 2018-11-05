@@ -5,6 +5,7 @@ import { StyleSheet, View } from 'react-native';
 
 import Map from './Map';
 import Card from './Card';
+import StartButton from './StartButton';
 import { fetchVenues, fetchDirections } from './utils';
 
 type Props = {};
@@ -70,7 +71,8 @@ class App extends PureComponent<Props> {
           destination={destination}
           onUserLocationUpdate={this.onUserLocationUpdate}
         />
-        <Card {...venue} onPress={this.showNextBar} />
+        <Card venue={venue} route={route} onPress={this.showNextBar} />
+        {!venue && <StartButton onPress={this.showNextBar} />}
       </View>
     );
   }

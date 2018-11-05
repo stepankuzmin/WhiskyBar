@@ -1,66 +1,73 @@
 // @flow
 
 import React from 'react';
-import { Text, StyleSheet, View } from 'react-native';
+import { StyleSheet, View } from 'react-native';
+
+import CardTitle from './CardTitle';
+import CardInfo from './CardInfo';
 
 type Props = {
-  name?: string,
+  venue?: {
+    name: string,
+    location: {
+      address: string
+    }
+  },
+  route?: {
+    distance: number,
+    duration: number
+  },
   onPress: Function
 };
 
 const Card = (props: Props) => {
-  const { name, onPress } = props;
+  const { venue, route, onPress } = props;
+
+  if (!venue || !route) {
+    return null;
+  }
 
   return (
     <View style={styles.container}>
-      <Text
-        style={[styles.title, !name && styles.emptyTitle]}
-        numberOfLines={1}
-      >
-        {name || 'click here →'}
-      </Text>
-      <Text style={styles.button} onPress={onPress}>
-        🥃
-      </Text>
+      <CardTitle
+        name={venue.name}
+        distance={route.distance}
+        location={venue.location}
+        onPress={onPress}
+      />
+      <CardInfo {...route} />
     </View>
   );
 };
 
 Card.defaultProps = {
-  name: null
+  venue: null,
+  route: null
 };
 
-const fontSize = 36;
-const titleColor = '#fff';
-const emptyTitleColor = '#ddd';
-const containerBackgroundColor = '#696969';
+const shadowColor = '#000';
+const backgroundColor = '#343332';
 const styles = StyleSheet.create({
   container: {
     position: 'absolute',
     bottom: 0,
+    width: '100%',
     flex: 1,
-    flexWrap: 'wrap',
-    flexDirection: 'row',
-    alignItems: 'stretch',
-    justifyContent: 'space-between',
-    fontSize: 36,
+    flexDirection: 'column',
     padding: 20,
     borderTopLeftRadius: 20,
     borderTopRightRadius: 20,
-    backgroundColor: containerBackgroundColor
-  },
-  title: {
-    flex: 1,
-    paddingRight: 10,
-    color: titleColor,
-    fontSize
-  },
-  emptyTitle: {
-    color: emptyTitleColor,
-    textAlign: 'right'
-  },
-  button: {
-    fontSize
+    backgroundColor,
+
+    // shadow
+    shadowColor,
+    shadowOffset: {
+      width: 0,
+      height: 3
+    },
+    shadowOpacity: 0.27,
+    shadowRadius: 4.65,
+    elevation: 6
   }
 });
 
